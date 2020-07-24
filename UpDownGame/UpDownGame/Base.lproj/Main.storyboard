@@ -115,7 +115,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="maximunValueLabel" destination="qWE-Hl-gMz" id="vc0-Wt-rmY"/>
+                        <outlet property="minimumValueLabel" destination="HbF-f9-UBB" id="5KS-m8-xZh"/>
                         <outlet property="slider" destination="0xu-6a-umH" id="zAi-mt-Pn5"/>
+                        <outlet property="sliderValueLabel" destination="adq-kW-MAp" id="KB8-tx-F64"/>
+                        <outlet property="tryCountLabel" destination="Wmp-Ul-aNf" id="RYt-ss-maH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
