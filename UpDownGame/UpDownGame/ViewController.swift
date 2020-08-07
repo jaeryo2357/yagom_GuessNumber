@@ -36,6 +36,9 @@ class ViewController: UIViewController {
         print(slider.value)
         let integerValue = Int(slider.value)
         slider.value = Float(integerValue)
+        
+        tryCount = tryCount + 1
+        tryCountLabel.text = "\(tryCount) / 5"
     }
     
     @IBAction func touchUpResetButton(_ sender: UIButton) {
