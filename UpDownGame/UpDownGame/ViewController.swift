@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     var randomValue: Int = 0
     var tryCount: Int = 0
+    
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var sliderValueLabel: UILabel!
     @IBOutlet weak var tryCountLabel: UILabel!
@@ -27,10 +28,14 @@ class ViewController: UIViewController {
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         print(sender.value)
+        let integerValue = Int(sender.value)
+        sliderValueLabel.text = String(integerValue)
     }
 
     @IBAction func touchHitButton(_ sender: UIButton) {
         print(slider.value)
+        let integerValue = Int(slider.value)
+        slider.value = Float(integerValue)
     }
     
     @IBAction func touchUpResetButton(_ sender: UIButton) {
