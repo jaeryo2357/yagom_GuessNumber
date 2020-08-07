@@ -34,11 +34,19 @@ class ViewController: UIViewController {
 
     @IBAction func touchHitButton(_ sender: UIButton) {
         print(slider.value)
-        let integerValue = Int(slider.value)
-        slider.value = Float(integerValue)
+        let hitValue = Int(slider.value)
+        slider.value = Float(hitValue)
         
         tryCount = tryCount + 1
         tryCountLabel.text = "\(tryCount) / 5"
+        
+        if randomValue == hitValue {
+            print("You Hit!!")
+        }
+        
+        if tryCount >= 5 {
+            print("You lose..")
+        }
     }
     
     @IBAction func touchUpResetButton(_ sender: UIButton) {
